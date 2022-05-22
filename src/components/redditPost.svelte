@@ -1,8 +1,10 @@
 <script>
     export let redditpost;
+    import { blur } from 'svelte/transition';
+    import { quintOut } from 'svelte/easing'; 
 </script>
 
-<a class="py-4 p-6 bg-gray-100 text-gray-800 text-center rounded-md shadow-sm hover:shadow-md flex flex-col items-center" href={redditpost.url} target="_blank">
+<a class="py-4 p-6 bg-gray-100 text-gray-800 text-center rounded-md shadow-sm hover:shadow-md flex flex-col items-center" href={redditpost.url} target='_blank' transition:blur>
 
     <img class="h-40" src={redditpost.thumbnail} alt={redditpost.title}>
     
