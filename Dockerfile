@@ -1,6 +1,6 @@
 FROM node:18.2.0
 
-WORKDIR /app
+WORKDIR /
 COPY package.json package-lock.json
 RUN npm ci
 
@@ -10,8 +10,8 @@ RUN npm run build
 
 FROM node:18.2.0
 
-WORKDIR /app
-COPY --from=0 /app .
+WORKDIR /
+COPY --from=0 / .
 COPY . .
 
 EXPOSE $PORT
