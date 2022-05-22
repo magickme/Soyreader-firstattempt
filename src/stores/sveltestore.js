@@ -8,8 +8,10 @@ export const fetchSubreddit = async (num) => {
     const data = await res.json();
     const loadedSubreddit = data.data.children.map((data, index) => ({
         title: data.data.title,
-        thumbnail: data.data.thumbnail,
-        selftext: data.data.selftext
+        author: data.data.author,
+        selftext: data.data.selftext,
+        subreddit_name_prefixed: data.data.subreddit_name_prefixed,
+        url: data.data.url
     }));
     subreddit.set(loadedSubreddit);
 };
