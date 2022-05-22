@@ -31,5 +31,17 @@
   "type": "module",
   "dependencies": {
     "@sveltejs/adapter-node": "^1.0.0-next.73"
-  }
+  },
+  "description": "Working towards building an RSS-style Reddit aggregator to de-soy the Reddit interface and present all information in one panel for quick assessment of followed subreddits. This is a reimagining of a now-defunct web app called Aggreddit that has been offline since around 2018.",
+  "main": "svelte.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magickme/Soyreader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magickme/Soyreader/issues"
+  },
+  "homepage": "https://github.com/magickme/Soyreader#readme"
 }

@@ -1,4 +1,4 @@
-FROM node:16.5.0
+FROM node:18.2.0
 
 WORKDIR /app
 COPY package.json package-lock.json
@@ -8,7 +8,7 @@ COPY . .
 
 RUN npm run build
 
-FROM node:16.5.0
+FROM node:18.2.0
 
 WORKDIR /app
 COPY --from=0 /app .
