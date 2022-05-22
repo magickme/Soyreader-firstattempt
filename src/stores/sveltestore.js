@@ -2,8 +2,8 @@ import { writable } from 'svelte/store';
 
 export const subreddit = writable([]);
 
-export const fetchSubreddit = async () => {
-    const url = `https://www.reddit.com/r/sveltejs/new.json?limit=20`;
+export const fetchSubreddit = async (num) => {
+    const url = `https://www.reddit.com/r/sveltejs/new.json?limit=${num}`;
     const res = await fetch(url);
     const data = await res.json();
     const loadedSubreddit = data.data.children.map((data, index) => ({
@@ -13,4 +13,4 @@ export const fetchSubreddit = async () => {
     }));
     subreddit.set(loadedSubreddit);
 };
-fetchSubreddit();
+fetchSubreddit(50);
