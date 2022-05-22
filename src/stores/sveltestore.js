@@ -3,7 +3,7 @@ import { writable } from 'svelte/store';
 export const subreddit = writable([]);
 
 export const fetchSubreddit = async () => {
-    const url = `https://www.reddit.com/r/sveltejs/top.json?limit=20`;
+    const url = `https://www.reddit.com/r/sveltejs/new.json?limit=20`;
     const res = await fetch(url);
     const data = await res.json();
     const loadedSubreddit = data.data.children.map((data, index) => ({
