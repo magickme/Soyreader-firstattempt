@@ -3,11 +3,11 @@
 </script>
 
 <svelte:head>
-    <title>Soyreader</title>
+    <title>About Soyreader</title>
 </svelte:head>
 
 <h1>Soyreader</h1>
-<p>Soy for the soy god, Reddit for the soyim.</p>
+<p>Poo in the loo</p>
 
 <style>
     h1 {
