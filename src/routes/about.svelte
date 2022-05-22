@@ -1,17 +1,7 @@
-<script>
-
-</script>
-
 <svelte:head>
     <title>About Soyreader</title>
 </svelte:head>
 
-<h1>Soyreader</h1>
-<p>Poo in the loo</p>
+<h1 class="text-4xl text-center antialiased text-indigo-700 my-8 uppercase">Soyreader</h1>
 
-<style>
-    h1 {
-        color: purple;
-        size: 1.5em;
-    }
-</style>
+<h2 class="text-2xl text-center text-indigo-600 my-8">A SvelteKit reader for /r/sveltejs.</h2>

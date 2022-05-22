@@ -1,29 +1,19 @@
 <script>
-    import { subreddit } from "../stores/sveltestore";
+    import { subreddit } from '../stores/sveltestore';
     console.log($subreddit);
+    import RedditPost from '../components/redditPost.svelte';
 </script>
 
 <svelte:head>
     <title>Soyreader</title>
 </svelte:head>
 
-<h1>Soyreader</h1>
+<h1 class="text-4xl text-center antialiased text-indigo-700 my-8 uppercase">Soyreader</h1>
 
-<h2>Newest posts from /r/sveltejs</h2>
-
-<hr>
+<h2 class="text-2xl text-center text-indigo-600 my-8">Newest posts from /r/sveltejs</h2>
 
 {#each $subreddit as redditpost}
-    <p>{redditpost.title}</p>
+    <RedditPost
+        redditpost={redditpost} 
+    />
 {/each}
-
-<style>
-    h1 {
-        color: purple;
-        size: 1.5em;
-    }
-    hr {
-        max-width: 80%;
-        color: gainsboro;
-    }
-</style>

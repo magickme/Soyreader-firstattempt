@@ -1,7 +1,10 @@
 <script>
-    import Nav from "../components/nav.svelte";
+	import "../app.css";
+	import Nav from "../components/nav.svelte";
 </script>
 
-<Nav />
-
-<slot />
+<div class="p-8 max-w-6xl mx-auto">
+	<br />
+	<Nav />
+	<slot />
+</div>
