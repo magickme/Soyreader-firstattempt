@@ -1,6 +1,6 @@
 <script>
-    import subreddit from "../stores/sveltestore.js";
-    console.log(subreddit);
+    import { subreddit } from "../stores/sveltestore";
+    console.log($subreddit);
 </script>
 
 <svelte:head>
