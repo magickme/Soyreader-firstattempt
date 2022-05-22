@@ -1,3 +1,3 @@
 <script>
-    export let redditpost;
+   /* export let redditpost; */
 </script>

@@ -1,0 +1,76 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-e3e19d4d.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-c31d8efe.js",
+      "_index-ef99b1ce.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/about.svelte",
+      "src/routes/index.svelte",
+      "src/routes/redditposts/[id].svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-af2e554f.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-c31d8efe.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-76eb1477.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-c01180ee.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-c31d8efe.js"
+    ]
+  },
+  "src/routes/about.svelte": {
+    "file": "pages/about.svelte-2430fb64.js",
+    "src": "src/routes/about.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-c31d8efe.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-b8853a5d.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-c31d8efe.js",
+      "_index-ef99b1ce.js"
+    ]
+  },
+  "src/routes/redditposts/[id].svelte": {
+    "file": "pages/redditposts/_id_.svelte-e1aa6da4.js",
+    "src": "src/routes/redditposts/[id].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-c31d8efe.js"
+    ]
+  },
+  "_index-c31d8efe.js": {
+    "file": "chunks/index-c31d8efe.js"
+  },
+  "_index-ef99b1ce.js": {
+    "file": "chunks/index-ef99b1ce.js",
+    "imports": [
+      "_index-c31d8efe.js"
+    ]
+  }
+}
