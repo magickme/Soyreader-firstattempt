@@ -34,3 +34,12 @@
         />
     {/each}
 </div>
+<br /><br /><br />
+
+<div class="grid gap-4 md:grid-cols-2 grid-cols-1">
+    {#each filteredPosts as redditpost}
+        <RedditPost
+            redditpost={redditpost} 
+        />
+    {/each}
+</div>

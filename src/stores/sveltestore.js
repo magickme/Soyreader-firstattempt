@@ -2,8 +2,8 @@ import { writable } from 'svelte/store';
 
 export const subreddit = writable([]);
 
-export const fetchSubreddit = async (num) => {
-    const url = `https://www.reddit.com/r/technology/top.json?limit=${num}`;
+export const fetchSubreddit = async (sub) => {
+    const url = `https://www.reddit.com/r/${sub}/top.json`;
     const res = await fetch(url);
     const data = await res.json();
     const loadedSubreddit = data.data.children.map((data, index) => ({
@@ -17,4 +17,4 @@ export const fetchSubreddit = async (num) => {
     }));
     subreddit.set(loadedSubreddit);
 };
-fetchSubreddit(12);
+fetchSubreddit("worldnews");
