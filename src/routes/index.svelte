@@ -2,6 +2,7 @@
     import { subreddit } from '../stores/sveltestore';
     console.log($subreddit);
     import RedditPost from '../components/redditPost.svelte';
+    import AggReddit from '../components/aggReddit.svelte';
 
     let searchTerm = "";
     let filteredPosts = [];
@@ -27,8 +28,8 @@
 
 <div class="grid gap-4 md:grid-cols-2 grid-cols-1">
     {#each filteredPosts as redditpost}
-        <RedditPost
-            redditpost={redditpost} 
+        <AggReddit
+            sub={transhuman}
         />
     {/each}
 </div>
