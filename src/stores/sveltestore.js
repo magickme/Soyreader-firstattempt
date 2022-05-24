@@ -17,4 +17,4 @@ export const fetchSubreddit = async (num) => {
     }));
     subreddit.set(loadedSubreddit);
 };
-fetchSubreddit(12);
+fetchSubreddit(100);

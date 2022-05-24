@@ -10,11 +10,13 @@
     "check": "svelte-check --tsconfig ./jsconfig.json",
     "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint .",
-    "format": "prettier --write --plugin-search-dir=. ."
+    "format": "prettier --write --plugin-search-dir=. .",
+    "test": "jest --watchAll --verbose"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
+    "@types/jest": "^27.5.1",
     "autoprefixer": "^10.4.7",
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.3.0",
@@ -30,7 +32,8 @@
   },
   "type": "module",
   "dependencies": {
-    "@sveltejs/adapter-node": "^1.0.0-next.73"
+    "@sveltejs/adapter-node": "^1.0.0-next.73",
+    "jest": "^28.1.0"
   },
   "description": "Working towards building an RSS-style Reddit aggregator to de-soy the Reddit interface and present all information in one panel for quick assessment of followed subreddits. This is a reimagining of a now-defunct web app called Aggreddit that has been offline since around 2018.",
   "main": "svelte.config.js",
