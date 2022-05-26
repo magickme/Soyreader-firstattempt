@@ -17,4 +17,4 @@ export const fetchSubreddit = async (sub, sort, time, limit) => {
     }));
     subreddit.set(loadedSubreddit);
 };
-fetchSubreddit("listentothis", "top", "year", 100);
+fetchSubreddit("listentothis", "top", "year", 10);
