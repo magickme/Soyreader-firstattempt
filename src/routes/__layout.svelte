@@ -3,6 +3,9 @@
 	import Nav from "../components/nav.svelte";
 	import {isOverlayOpen} from '../stores/overlaystore';
 	import Overlay from '../components/overlay.svelte';
+	import Modal from '../components/modal.svelte';
+	import { subreddit } from "../stores/sveltestore.js";
+	let modal = [...$subreddit];
 </script>
 
 <Nav />
@@ -11,8 +14,9 @@
 
 	{#if $isOverlayOpen}
 		<Overlay>
-			<p class="text-white text-xl text-left">They played us...</p>
-			<p class="text-white text-4xl text-right">...like a damn fiddle!</p>
+			<Modal 
+				redditmodal={modal}
+			/>
 		</Overlay>
 	{/if}
 	
