@@ -4,6 +4,7 @@
     import {isOverlayOpen} from '../stores/overlaystore.js';
 </script>
 
+<a href={redditpost.url} target="_blank">
 <div class="py-4 p-6 bg-gray-100 text-gray-800 text-center rounded-md shadow-lg hover:shadow-xl flex flex-col items-center" transition:blur on:click={() => {isOverlayOpen.set(true)}}>
 
     <img class="h-40" src={redditpost.thumbnail} alt={redditpost.title}>
@@ -12,4 +13,5 @@
     
     <p>{redditpost.selftext}</p><br />
 </div>
+</a>
 

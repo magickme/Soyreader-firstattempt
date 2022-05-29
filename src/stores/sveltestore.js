@@ -2,7 +2,7 @@ import { writable } from 'svelte/store';
 
 export const subreddit = writable([]);
 
-export const fetchSubreddit = async (sub, sort, time, limit) => {
+export const fetchSubreddit = async(sub, sort, time, limit) => {
     const url = `https://www.reddit.com/r/${sub}/${sort}.json?t=${time}&limit=${limit}`;
     const res = await fetch(url);
     const data = await res.json();
@@ -17,4 +17,4 @@ export const fetchSubreddit = async (sub, sort, time, limit) => {
     }));
     subreddit.set(loadedSubreddit);
 };
-fetchSubreddit("listentothis", "top", "today", 100);
+fetchSubreddit("linux", "top", "today", 100);
